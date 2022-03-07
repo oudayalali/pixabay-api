@@ -1,0 +1,18 @@
+.srchButton{
+    margin-left: 100px;
+    width: 200px;
+} 
+input{
+    width: 700px;
+}
+.example-form-field {
+    width: 100%;
+  }
+  .content{
+      padding: 16px;
+  }
+  .centerTitle{
+      margin-left: auto;
+      margin-right: auto;
+      width: 25rem;
+  }

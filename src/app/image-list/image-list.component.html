@@ -1,0 +1,52 @@
+<div class="centerTitle">
+    <mat-form-field class="example-form-field" appearance="fill">
+        <mat-label>Find Images</mat-label>
+        <input matInput type="text" [(ngModel)]='searchQuery' placeholder="Search for Images">
+        <button matSuffix mat-icon-button aria-label="Clear">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <button class="srchButton" mat-raised-button color="primary"(click)="searchImages(searchQuery)" type="button">
+        Search
+    </button>
+
+</div>
+    
+
+<p *ngIf="searching">Fetching data....</p>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"*ngFor="let image of images" class="image-container">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{image.user}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{image.webformatURL}}" style="width: 250px; height: 200px;">
+                <mat-card-content>
+                  <p>
+                    Tags: {{image.tags}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>Likes: {{image.likes}}</button>
+                  <button mat-button>Comments: {{image.comments}}</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+
+    </div>
+</div>
+        
+        
+
+       
+    
+
+
+
+
+
+
+
+

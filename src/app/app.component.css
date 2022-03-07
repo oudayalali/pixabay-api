@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@400;500;700&family=Pushster&display=swap');
+h2{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    font-size: 45px;
+    font-family: 'Pushster', cursive;
+}
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
